@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap");
+
+.row {
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.row > h1 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+.row_poster {
+  max-height: 150px;
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.movie-card > p {
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+
+.movie-link {
+  object-fit: contain;
+  transition: transform 450ms;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.row_posterLarge {
+  max-height: 250px;
+  transition: scale(1.09);
+}
